@@ -2,7 +2,9 @@
 ##### This project is about building an image classification CNN using PyTorch to seperate MRI scans of types of Brain Tumors into the following categories i.e, Glioma tumor, Meningioma tumor, Pituitary tumor, _and Normal_.
 
 ### Dataset
-###### The dataset was taken from kaggle: https://www.kaggle.com/datasets/thomasdubail/brain-tumors-256x256. It has 3 types of brain tumors in 3 different folders along with a seperate folder for a _normal_ brain. The data was preprocessed which included normalizing it, resizing it and introducing randomness into it to enchance the models performance. Total Images are ~3500. It was divided into Training (70%), Validation (15%) and Testing (15%) parts.
+###### The dataset was taken from kaggle: https://www.kaggle.com/datasets/thomasdubail/brain-tumors-256x256. 
+
+It has 3 types of brain tumors in 3 different folders along with a seperate folder for a _normal_ brain. The data was preprocessed which included normalizing it, resizing it and introducing randomness into it to enchance the models performance. Total Images are ~3500. It was divided into Training (70%), Validation (15%) and Testing (15%) parts.
 
 ### Requirements
   >Pip install requirements.txt
