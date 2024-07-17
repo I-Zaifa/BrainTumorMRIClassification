@@ -8,6 +8,7 @@ import numpy as np
 import torch.optim as optim
 import copy
 from PIL import Image
+from sklearn.metrics import confusion_matrix, classification_report
 
 # Transform the data 
 data_transforms = {
@@ -113,11 +114,6 @@ num_epochs = 2
 best_model_weights = copy.deepcopy(model.state_dict())
 best_acc = 0.0
 
-# THE TRAINING LOOP :)
-num_epochs = 1
-best_model_weights = copy.deepcopy(model.state_dict())
-best_acc = 0.0
-
 if __name__ == '__main__':
     for epoch in range(num_epochs):
         print(f'Epoch {epoch+1}/{num_epochs}')
@@ -212,7 +208,7 @@ if __name__ == '__main__':
             transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])
     ])
 
-    img_path = 'Pituitary_example_test.jpg'
+    img_path = 'G_example_test.jpg'
     image = Image.open(img_path)
     input_tensor = transform(image)
     input_tensor = input_tensor.unsqueeze(0).to(device)
