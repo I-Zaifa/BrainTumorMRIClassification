@@ -10,7 +10,7 @@
   >Pip install requirements.txt
 
 ### Results
- The model was trained for 1000 epochs but as you can see in the jupyter notebook that 300-400 would have been enough as the results tend to stay the same after that. It took 6 hours to train the model on an _RTX_ gpu. I could not upload the pth file for the saved model as it exceeded github's allowed storage limit per file. The final test data prediction accuracy is 91%. It is very good in predicting Glioma, Pituitary and Meningioma tumors but it has issues with normal brain scans. The project only needs to be updated with a larger dataset to provide further better performance. 
+ The model was trained for 1000 epochs but as you can see in the jupyter notebook that 300-400 would have been enough as the results tend to stay the same after that. It took 6 hours to train the model on an _RTX_ gpu. I could not upload the pth file for the saved model as it exceeded github's allowed storage limit per file (The saved model is not based on the last run epoch but on the highest validation result). The final test data prediction accuracy is 91%. It is very good in predicting and differentiating between Glioma, Pituitary and Meningioma tumors but it has issues with normal brain scans. The project only needs to be updated with a larger dataset to provide further better performance. 
 
 
 ### License
